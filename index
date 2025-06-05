@@ -1,0 +1,6 @@
+git init                                 # Inicjalizuje repozytorium Gita
+git add .                                # Dodaje wszystkie pliki do śledzenia
+git commit -m "Dodaj grę klikacza"       # Tworzy pierwszy commit
+git branch -M main                       # Ustawia nazwę gałęzi na "main"
+git remote add origin https://github.com/TWOJA-NAZWA/klikacz-zlotowki.git
+git push -u origin main                  # Wysyła pliki na GitHub
