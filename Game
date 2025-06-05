@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klikacz Złotówki</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    #money {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2291498564334760"
+     crossorigin="anonymous"></script>
+
+    button:hover {
+      background-color: #019875;
+    }
+
+    .ad-box {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fffbe6;
+      border: 1px solid #e1c400;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💸 Klikacz Złotówki</h1>
+  <p id="money">Masz 0 zł</p>
+  <button onclick="clickMoney()">Kliknij, aby zarobić</button>
+
+  <div class="ad-box">
+    <p>🔗 <strong>Chcesz zarobić naprawdę?</strong><br>
+    <a href="https://twoj-link-afiliacyjny.pl" target="_blank">Zarejestruj się tutaj i zacznij!</a></p>
+  </div>
+
+  <script>
+    let money = 0;
+
+    function clickMoney() {
+      money++;
+      document.getElementById("money").textContent = `Masz ${money} zł`;
+
+      if (money === 50) {
+        alert("Wow! Zarobiłeś 50 zł! Sprawdź, jak zarabiać naprawdę – link poniżej.");
+      }
+    }
+  </script>
+
+</body>
+</html>
